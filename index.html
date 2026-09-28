@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>guest@portfolio: ~</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+<div class="terminal">
+
+  <div class="titlebar">
+    <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+    <div class="titlebar-name">guest@portfolio: ~</div>
+  </div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-link" data-page="home" href="index.html">~/home</a>
+      <a class="nav-link" data-page="about" href="about.html">~/about</a>
+      <a class="nav-link" data-page="projects" href="projects.html">~/projects</a>
+      <a class="nav-link" data-page="blogs" href="blogs.html">~/blogs</a>
+      <a class="nav-link" data-page="research" href="research.html">~/research</a>
+      <a class="nav-link" data-page="contact" href="contact.html">~/contact</a>
+    </div>
+  </nav>
+
+  <div class="screen">
+
+    <p class="line boot">Last login: <span id="bootDate"></span> on ttys000</p>
+
+    <section class="block">
+      <p class="prompt">guest@portfolio <span class="path">~</span> % <span class="cmd">whoami</span></p>
+      <div class="output">
+        <h1 class="name">Your Name</h1>
+        <p class="tagline">Backend engineer who occasionally surfaces to build things people can see.</p>
+        <p class="bio">
+          I'm a [your role / what you study], mostly living in the backend —
+          APIs, data pipelines, systems that need to not fall over. This site
+          is where the stuff I build outside of that lives.
+          <a class="inline-link" href="about.html">More about me →</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="block">
+      <p class="prompt">guest@portfolio <span class="path">~</span> % <span class="cmd">ls -la</span></p>
+      <div class="output">
+        <pre class="dirlisting"><span class="perm">drwxr-xr-x</span>  <a class="dirname" href="about.html">about/</a>
+<span class="perm">drwxr-xr-x</span>  <a class="dirname" href="projects.html">projects/</a>
+<span class="perm">drwxr-xr-x</span>  <a class="dirname" href="blogs.html">blogs/</a>
+<span class="perm">drwxr-xr-x</span>  <a class="dirname" href="research.html">research/</a>
+<span class="perm">-rw-r--r--</span>  <a class="filename" href="contact.html">contact.txt</a>
+<span class="hint">
+# click a line above, or use the nav bar up top</span></pre>
+      </div>
+    </section>
+
+    <p class="prompt end-prompt">guest@portfolio <span class="path">~</span> % <span class="cursor">&nbsp;</span></p>
+
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

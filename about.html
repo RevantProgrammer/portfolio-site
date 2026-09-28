@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - guest@portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="about">
+
+<div class="terminal">
+
+  <div class="titlebar">
+    <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+    <div class="titlebar-name">guest@portfolio: ~/about</div>
+  </div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-link" data-page="home" href="index.html">~/home</a>
+      <a class="nav-link" data-page="about" href="about.html">~/about</a>
+      <a class="nav-link" data-page="projects" href="projects.html">~/projects</a>
+      <a class="nav-link" data-page="blogs" href="blogs.html">~/blogs</a>
+      <a class="nav-link" data-page="research" href="research.html">~/research</a>
+      <a class="nav-link" data-page="contact" href="contact.html">~/contact</a>
+    </div>
+  </nav>
+
+  <div class="screen">
+
+    <section class="block">
+      <p class="prompt">guest@portfolio <span class="path">~/about</span> % <span class="cmd">cat about.md</span></p>
+      <div class="output">
+        <h1 class="name">About</h1>
+        <p class="bio">
+          Longer bio goes here. Talk about how you got into tech, what you're
+          studying or working on, and what kind of problems you actually enjoy
+          solving. Two or three sentences is plenty — this isn't a résumé,
+          it's context.
+        </p>
+        <p class="bio">
+          Second paragraph placeholder — maybe what you're currently learning,
+          or what you're looking for (internships, grad roles, collaborators
+          on side projects, whatever's relevant right now).
+        </p>
+      </div>
+    </section>
+
+    <section class="block">
+      <p class="prompt">guest@portfolio <span class="path">~/about</span> % <span class="cmd">cat education.txt</span></p>
+      <div class="output">
+        <p class="bio">
+          University Name — Degree, expected graduation year. Swap in your
+          real details, or delete this block if it's not relevant.
+        </p>
+      </div>
+    </section>
+
+    <section class="block">
+      <p class="prompt">guest@portfolio <span class="path">~/about</span> % <span class="cmd">cat skills.txt</span></p>
+      <div class="output">
+        <ul class="skills-list">
+          <li>Python</li>
+          <li>Go</li>
+          <li>SQL</li>
+          <li>Docker</li>
+          <li>Linux</li>
+          <li>REST APIs</li>
+          <li>Git</li>
+        </ul>
+      </div>
+    </section>
+
+    <p class="prompt end-prompt">guest@portfolio <span class="path">~/about</span> % <span class="cursor">&nbsp;</span></p>
+
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
