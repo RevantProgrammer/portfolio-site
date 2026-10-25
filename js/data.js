@@ -4,6 +4,17 @@
 // just save and refresh the page.
 // ============================================================
 
+// Personal info used across the site (name, tagline, contact links)
+const SITE = {
+  name: "Revant Pandey",
+  tagline: "High-schooler building backends, robots and AI workflows. Most of them work on the first try. Most.",
+  contact: [
+    { key: "email",    label: "revant_pandey@outlook.com",            url: "mailto:revant_pandey@outlook.com" },
+    { key: "github",   label: "github.com/RevantProgrammer",      url: "https://github.com/RevantProgrammer" },
+    { key: "linkedin", label: "LinkedIn not yet created", url: "#" }
+  ]
+};
+
 const PROJECTS = [
   {
     name: "project-one",
@@ -49,19 +60,5 @@ const BLOGS = [
   }
 ];
 
-const RESEARCH = [
-  {
-    name: "Placeholder Paper Title on a Systems Topic",
-    meta: "Undergrad Research Symposium · 2026",
-    description: "One or two sentence abstract summary placeholder — describe the problem and what you found.",
-    tags: ["systems", "distributed"],
-    links: { paper: "#" }
-  },
-  {
-    name: "Second Research Placeholder",
-    meta: "Course Project · 2025",
-    description: "Swap in the real title, venue, and abstract for this piece of research work.",
-    tags: ["ml"],
-    links: { paper: "#" }
-  }
-];
+// Empty for now: the research page shows a "coming soon" note until entries are added
+const RESEARCH = [];

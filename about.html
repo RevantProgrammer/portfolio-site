@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About - guest@portfolio</title>
+<title>about — guest@portfolio</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-page="about">
@@ -33,15 +33,23 @@
       <div class="output">
         <h1 class="name">About</h1>
         <p class="bio">
-          Longer bio goes here. Talk about how you got into tech, what you're
-          studying or working on, and what kind of problems you actually enjoy
-          solving. Two or three sentences is plenty — this isn't a résumé,
-          it's context.
+          I first got into tech through block coding on <a class="inline-link" href="https://scratch.mit.edu" target="_blank">Scratch</a>. I used to
+          build games occasionally on the platform. However, I soon started to like
+          robotics and the idea of being able to integrate software with hardware.
+
+          This is when I was introduced to programming languages like C++, Python,
+          JavaScript and Java (Took me a while to figure out that they are different).
         </p>
         <p class="bio">
-          Second paragraph placeholder — maybe what you're currently learning,
-          or what you're looking for (internships, grad roles, collaborators
-          on side projects, whatever's relevant right now).
+          I aim to continue building projects since I love to keep myself constantly
+          challenged and solve real world problems. Some things I am currently working
+          on include Adaptive Traffic Lights and an AI powered planner. You can find
+          more details on these in the ~/projects/ page.
+        </p>
+        <p class="bio">
+          P.S. I thought it would be kind of cool to have my website in the form of an
+          actual terminal. Feel free to just click on links as you would with a normal site
+          in case you do not like the look/feel :(
         </p>
       </div>
     </section>
@@ -50,8 +58,13 @@
       <p class="prompt">guest@portfolio <span class="path">~/about</span> % <span class="cmd">cat education.txt</span></p>
       <div class="output">
         <p class="bio">
-          University Name — Degree, expected graduation year. Swap in your
-          real details, or delete this block if it's not relevant.
+          I am currently in Year 11, doing VCE in Australia. My subjects include:
+          Specialist Mathematics, Mathematical Methods, Chemistry, Business Management,
+          English, and Algorithmics. I study at North Geelong Secondary College.
+        </p>
+        <p class="bio">
+          I wish to go to university and pursue a degree in Computer Science, working
+          on the frontiers of Artificial Intelligence.
         </p>
       </div>
     </section>
@@ -59,15 +72,64 @@
     <section class="block">
       <p class="prompt">guest@portfolio <span class="path">~/about</span> % <span class="cmd">cat skills.txt</span></p>
       <div class="output">
+        <p class="skills-label"># languages &amp; web</p>
         <ul class="skills-list">
           <li>Python</li>
-          <li>Go</li>
+          <li>C++</li>
           <li>SQL</li>
-          <li>Docker</li>
-          <li>Linux</li>
-          <li>REST APIs</li>
-          <li>Git</li>
+          <li>HTML / CSS / JS</li>
+          <li>Next.js (getting there)</li>
         </ul>
+
+        <p class="skills-label"># ai / ml &amp; data</p>
+        <ul class="skills-list">
+          <li>PyTorch</li>
+          <li>scikit-learn</li>
+          <li>TensorFlow (experimenting)</li>
+          <li>Pandas</li>
+          <li>NumPy</li>
+          <li>Matplotlib</li>
+          <li>Seaborn</li>
+        </ul>
+
+        <p class="skills-label"># hardware</p>
+        <ul class="skills-list">
+          <li>Arduino Uno</li>
+          <li>Raspberry Pi (experimenting)</li>
+          <li>IMUs</li>
+          <li>IR, distance &amp; sound sensors</li>
+          <li>moisture &amp; temperature sensors</li>
+          <li>Bluetooth modules</li>
+          <li>servo, stepper &amp; geared motors</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block">
+      <p class="prompt">guest@portfolio <span class="path">~/about</span> % <span class="cmd">cat achievements.txt</span></p>
+      <div class="output">
+        <ul class="achievements-list">
+          <li><strong>ADF Future Innovators Award</strong> (2025): for my Adaptive Traffic Lights
+            project, which uses a custom loss function that weighs how long cars wait against how
+            many are waiting.</li>
+          <li><strong>Excellence in Scientific Communication</strong>: for presenting that project at
+            John Monash Science School.</li>
+          <li><strong>Geelong Innovation Award</strong></li>
+          <li><strong>Best Debater</strong>: at a school debating competition.</li>
+          <li><strong>Co-lead, school robotics team</strong>: no competitions yet, but we're working on it.</li>
+        </ul>
+        <p class="bio">Next on the list: hackathons.</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <p class="prompt">guest@portfolio <span class="path">~/about</span> % <span class="cmd">cat offline.txt</span></p>
+      <div class="output">
+        <p class="bio">
+          When I'm away from a screen, I'm usually at the piano. I've been practising a lot lately
+          and I'm currently learning <em>Blinding Lights</em> by The Weeknd and <em>Aria Math</em>
+          by C418. I also enjoy debating, mostly because arguing is more fun when there are rules.
+        </p>
       </div>
     </section>
 
@@ -78,5 +140,7 @@
 
 <script src="js/data.js"></script>
 <script src="js/script.js"></script>
+<script src="js/terminal.js"></script>
+<script src="js/background.js"></script>
 </body>
 </html>
