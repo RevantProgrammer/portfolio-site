@@ -18,9 +18,15 @@ const SITE = {
 const PROJECTS = [
   {
     name: "adaptive-traffic-lights",
-    description: "A pygame simulation of a four-way intersection that pits fixed-timing traffic lights against smart ones. The smart lights use my own cost function, which weighs how long cars have waited against how many are queued, and give emergency vehicles priority. Won the 2025 ADF Future Innovators Award and a 2026 Geelong Innovation Award.",
-    tags: ["python", "pygame", "simulation", "optimisation"],
+    description: "Smarter traffic lights, built in two halves. Software: a pygame simulation of a four-way intersection, used as a proof of concept to pit my lights (a custom cost function weighing how long cars have waited against how many are queued, with emergency-vehicle priority) against fixed timings. The drop in wait times was statistically significant. Hardware: a model intersection where a camera and a YOLO model I fine-tuned on Hot Wheels cars count the traffic on each side, and an Arduino switches 12 LEDs to match. Won the 2025 ADF Future Innovators Award and a 2026 Geelong Innovation Award. (The repo has the simulation; hardware code coming soon.)",
+    tags: ["python", "pygame", "yolo", "computer-vision", "arduino"],
     links: { github: "https://github.com/RevantProgrammer/AdaptiveLightsSimulator", demo: "" }
+  },
+  {
+    name: "ai-planner",
+    description: "A Streamlit app that pulls business data from Google Sheets, has an LLM turn it into a structured plan, lets you refine it with follow-up prompts, then exports the result as a PDF. Includes login with bcrypt-hashed passwords. This is the early prototype; the version I've built since is a lot better.",
+    tags: ["python", "streamlit", "google-sheets-api", "llm", "pdf"],
+    links: { github: "https://github.com/RevantProgrammer/AIPlanner", demo: "" }
   }
 ];
 

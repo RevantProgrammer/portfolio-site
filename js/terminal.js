@@ -29,6 +29,7 @@ function initTerminal() {
     'education.txt': 'about',
     'skills.txt': 'about',
     'achievements.txt': 'about',
+    'leadership.txt': 'about',
     'offline.txt': 'about'
   };
 
@@ -115,7 +116,7 @@ function initTerminal() {
     } else if (has(SECTION_DATA, currentPage)) {
       items = sectionItems().map(i => `<span class="filename">${escapeHTML(i.name)}</span>`);
     } else if (currentPage === 'about') {
-      items = ['about.md', 'education.txt', 'skills.txt', 'achievements.txt', 'offline.txt'].map(f => `<span class="filename">${f}</span>`);
+      items = ['about.md', 'education.txt', 'skills.txt', 'achievements.txt', 'leadership.txt', 'offline.txt'].map(f => `<span class="filename">${f}</span>`);
     } else {
       items = ['<span class="filename">contact.txt</span>'];
     }
