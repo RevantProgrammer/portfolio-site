@@ -17,48 +17,15 @@ const SITE = {
 
 const PROJECTS = [
   {
-    name: "project-one",
-    description: "One or two sentences on what this project does and why you built it.",
-    tags: ["python", "postgres", "docker"],
-    links: { github: "https://github.com/yourhandle/project-one", demo: "" }
-  },
-  {
-    name: "project-two",
-    description: "Another short description. Focus on the interesting technical decision, not just what it does.",
-    tags: ["go", "redis"],
-    links: { github: "https://github.com/yourhandle/project-two", demo: "" }
-  },
-  {
-    name: "project-three",
-    description: "Third project placeholder — swap in your real work here.",
-    tags: ["rust", "cli-tool"],
-    links: { github: "https://github.com/yourhandle/project-three", demo: "" }
+    name: "adaptive-traffic-lights",
+    description: "A pygame simulation of a four-way intersection that pits fixed-timing traffic lights against smart ones. The smart lights use my own cost function, which weighs how long cars have waited against how many are queued, and give emergency vehicles priority. Won the 2025 ADF Future Innovators Award and a 2026 Geelong Innovation Award.",
+    tags: ["python", "pygame", "simulation", "optimisation"],
+    links: { github: "https://github.com/RevantProgrammer/AdaptiveLightsSimulator", demo: "" }
   }
 ];
 
-const BLOGS = [
-  {
-    name: "why-i-write-my-own-cli-tools",
-    date: "2026-08-14",
-    description: "A short excerpt or summary of the post goes here — a sentence or two that pulls readers in.",
-    tags: ["tooling", "opinion"],
-    links: { read: "#" }
-  },
-  {
-    name: "debugging-a-race-condition-at-2am",
-    date: "2026-06-02",
-    description: "War story placeholder. Swap in a real post title, date, and link when ready.",
-    tags: ["debugging", "backend"],
-    links: { read: "#" }
-  },
-  {
-    name: "notes-on-learning-rust",
-    date: "2026-03-19",
-    description: "Placeholder excerpt for a learning-in-public style post.",
-    tags: ["rust", "learning"],
-    links: { read: "#" }
-  }
-];
+// Empty for now: the blogs page shows a "coming soon" note until posts are added
+const BLOGS = [];
 
 // Empty for now: the research page shows a "coming soon" note until entries are added
 const RESEARCH = [];

@@ -111,11 +111,19 @@ if (projectsGridEl && typeof PROJECTS !== 'undefined') {
   ).join('');
 }
 
+// shown in place of the cards while a section has no entries yet
+function comingSoon(what) {
+  return `<p class="bio">total 0</p>
+    <p class="bio"># coming soon: ${escapeHTML(what)}. check back later.</p>`;
+}
+
 const blogsGridEl = document.getElementById('blogsGrid');
 if (blogsGridEl && typeof BLOGS !== 'undefined') {
-  blogsGridEl.innerHTML = BLOGS.map(b =>
-    renderEntryCard(b, { metaField: 'date', linkLabels: { read: 'read' } })
-  ).join('');
+  blogsGridEl.innerHTML = BLOGS.length
+    ? BLOGS.map(b =>
+        renderEntryCard(b, { metaField: 'date', linkLabels: { read: 'read' } })
+      ).join('')
+    : comingSoon('no posts yet, the first one is brewing');
 }
 
 const researchGridEl = document.getElementById('researchGrid');
@@ -124,6 +132,5 @@ if (researchGridEl && typeof RESEARCH !== 'undefined') {
     ? RESEARCH.map(r =>
         renderEntryCard(r, { metaField: 'meta', linkLabels: { paper: 'paper' } })
       ).join('')
-    : `<p class="bio">total 0</p>
-       <p class="bio"># coming soon: research in progress, nothing published yet. check back later.</p>`;
+    : comingSoon('research in progress, nothing published yet');
 }
